@@ -71,7 +71,7 @@ const LandingSection = () => {
               sx={{ mt: 4, px: 2.5, py: 1.5, fontSize: "1rem", gap: 1.5, textTransform: "none"}}
               onClick={handleScrollToContact}
             >
-              Get in Touch <RocketLaunchRoundedIcon />
+              Get in Touch! <RocketLaunchRoundedIcon />
             </Button>
           </FadeInSection>
         </Box>

@@ -1,26 +1,26 @@
 [
   {
-    "title": "SkyCast",
-    "description": "A weather forecasting app for real-time data",
-    "year": 2021,
-    "type": "Web Apps",
-    "context": "Hackathon",
-    "languages": ["Python", "HTML, CSS, JS"]
+      "title": "SkyCast",
+      "description": "A weather forecasting app for real-time data."
   },
   {
-    "title": "Sudoku Solver",
-    "description": "An AI-powered solver for Sudoku puzzles",
-    "year": 2020,
-    "type": "Static Website",
-    "context": "Education",
-    "languages": ["Python"]
+      "title": "Sudoku Solver",
+      "description": "An AI-powered solver for Sudoku puzzles."
   },
   {
-    "title": "Asteroids Game",
-    "description": "A modern twist on the classic Asteroids game",
-    "year": 2022,
-    "type": "PyGame",
-    "context": "Personal",
-    "languages": ["C"]
+      "title": "Asteroids Game",
+      "description": "A modern twist on the classic Asteroids game."
+  },
+  {
+      "title": "Expense Tracker",
+      "description": "A personal finance app for tracking expenses and budgeting."
+  },
+  {
+      "title": "Portfolio Builder",
+      "description": "An interactive tool to build and share portfolios."
+  },
+  {
+      "title": "Crypto Tracker",
+      "description": "A cryptocurrency tracker with live market updates."
   }
 ]

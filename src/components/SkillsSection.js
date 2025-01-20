@@ -5,6 +5,7 @@ import DesignServicesOutlinedIcon from "@mui/icons-material/DesignServicesOutlin
 import DnsOutlinedIcon from "@mui/icons-material/DnsOutlined";
 import CloudOutlinedIcon from "@mui/icons-material/CloudOutlined";
 import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
+import SectionSubtitle from "./SectionSubtitle";
 
 // Skills data
 const skills = [
@@ -20,14 +21,15 @@ const SkillsSection = () => {
       <Container maxWidth="lg">
         {/* Title */}
         <Grid container spacing={3} justifyContent="center" alignItems="center">
-          <Grid item xs={12} display="flex" justifyContent="center">
+          <Grid item xs={12} display="flex" justifyContent="center" sx={{mb: { xs: 4, md: 15} }}>
             <FadeInSection>
-              <Typography variant="h3" sx={{ fontWeight: "bold", textAlign: "center", mb: { xs: 4, md: 12 } }}>
+              <Typography variant="h3" sx={{ fontWeight: "bold", textAlign: "center"}}>
                 Skills
                 <Box component="span" sx={{ color: "primary.main", fontSize: "50px", ml: 1 }}>
                   .
                 </Box>
               </Typography>
+              <SectionSubtitle text={"What I bring to the table."}></SectionSubtitle>
             </FadeInSection>
           </Grid>
 

@@ -16,7 +16,7 @@ const AboutSection = () => {
       <Container maxWidth="lg"> {/* ✅ Constrain the width */}
         <Grid container spacing={4} justifyContent="center" alignItems="center">
           {/* Title Centered */}
-            <Grid item xs={12} display="flex" justifyContent="center">
+            <Grid item xs={12} display="flex" justifyContent="center" sx={{ mb: { xs: 4, md: 15}}}>
                 <FadeInSection>
                     <Typography
                     variant="h3"
@@ -25,7 +25,6 @@ const AboutSection = () => {
                         display: "flex",
                         alignItems: "center",
                         textAlign: "center",
-                        mb: { xs: 4, md: 6 }, // ✅ Extra margin below title
                     }}
                     >
                     About Me
@@ -39,9 +38,8 @@ const AboutSection = () => {
                     >
                         .
                     </Box>
-                    </Typography>
-              
-                    {/* <SectionSubtitle text={"A bit about who I am and what drives me."}></SectionSubtitle> */}
+                    </Typography>              
+                    <SectionSubtitle text={"Who I am and what drives me."}></SectionSubtitle>
                 </FadeInSection>
             </Grid>
 

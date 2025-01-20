@@ -4,6 +4,8 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import SendRoundedIcon from "@mui/icons-material/SendRounded";
 import FadeInSection from "./FadeInSection";
+import VerticalSpacer from "./VerticalSpacer";
+import SectionSubtitle from "./SectionSubtitle";
 
 const ContactSection = () => {
   return (
@@ -22,7 +24,6 @@ const ContactSection = () => {
             sx={{
               fontWeight: "bold",
               textAlign: "center",
-              mb: { xs: 4, md: 16 },
             }}
           >
             Contact Me
@@ -37,6 +38,9 @@ const ContactSection = () => {
               .
             </Box>
           </Typography>
+
+          <SectionSubtitle text={"Let’s get in touch."}></SectionSubtitle>
+          <Box sx={{mb: { xs: 4, md: 15 }}}></Box>
         </FadeInSection>
 
         <Grid container spacing={6}>
@@ -148,6 +152,8 @@ const ContactSection = () => {
             </FadeInSection>
           </Grid>
         </Grid>
+        <VerticalSpacer/> 
+        <VerticalSpacer/>
 
         {/* Footer */}
         <Typography
@@ -158,7 +164,7 @@ const ContactSection = () => {
             mt: { xs: 6, md:10 }, // Add spacing at the bottom
           }}
         >
-          Created and maintained by Omer Adeel. January 2025.
+          Created and maintained by Omer Adeel (January 2025).&nbsp; <a target="_blank" href="https://www.omeradeel.com">View Portfolio v1.</a>
         </Typography>
       </Container>
     </Box>

@@ -29,16 +29,32 @@ const Navbar = ({ toggleTheme, darkMode }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const getBackgroundColour = () => {
+    let color = ""
+    if (darkMode) {
+      if (scrolling){
+        color =  '#181818'
+      } else {
+        color = "transparent" 
+      }
+    } else {
+      color = "background.default"
+    }
+    return color
+  }
+
   return (
     <>
       <AppBar
         position="fixed"
+        color={getBackgroundColour()}
         sx={{
-          bgcolor: darkMode ? '#181818' : "background.default",
-          transition: "box-shadow 0.3s, border-bottom 0.3s",
+          bgcolor: "background.default",
+          transitionDuration: "0.3s",
           boxShadow: scrolling ? "0px 4px 10px rgba(0, 0, 0, 0.1)" : "none", // ✅ Adds shadow on scroll
           borderBottom: scrolling ? "1px solid rgba(0, 0, 0, 0.1)" : "transparent", // ✅ Subtle border
         }}
+        enableColorOnDark
       >
         {/* ✅ Constrain width */}
         <Container maxWidth="lg">

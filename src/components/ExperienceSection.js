@@ -3,6 +3,7 @@ import { Box, Typography, Grid, Chip, Container } from "@mui/material";
 
 import experienceData from "../data/experience.json"; // Ensure JSON includes a "skills" array for each experience.
 import FadeInSection from "./FadeInSection";
+import SectionSubtitle from "./SectionSubtitle";
 
 const ExperienceSection = () => {
   return (
@@ -15,7 +16,6 @@ const ExperienceSection = () => {
           sx={{
             fontWeight: "bold",
             textAlign: "center",
-            mb: { xs: 4, md: 8 },
           }}
         >
           Experience
@@ -23,6 +23,8 @@ const ExperienceSection = () => {
             .
           </Box>
         </Typography>
+        <SectionSubtitle text={"Where I've been so far."}></SectionSubtitle>
+        <Box  sx={{mb: { xs: 4, md: 15 }}}></Box>
       </FadeInSection>
 
       {experienceData.map((group, index) => (
