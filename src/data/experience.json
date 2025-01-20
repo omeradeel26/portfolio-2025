@@ -1,0 +1,79 @@
+[
+    {
+      "year": 2025,
+      "experiences": [
+        {
+          "role": "Software Engineer Intern — Velocity (Internal Tools) Team",
+          "organization": "BitGo",
+          "duration": "Jan - Apr",
+          "summary": "Developed scalable infrastructure to manage $64B+ in digital assets with robust tools and services.",
+          "emoji": "🔒",
+          "skills": ["TypeScript", "Node.js", "Rust"]
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "experiences": [
+        {
+          "role": "Software Engineer Intern — Shipping Platform & Analytics Team",
+          "organization": "Purolator",
+          "duration": "May - Aug",
+          "summary": "Automated workflows and enhanced cloud service monitoring across 75 services, improving scalability.",
+          "emoji": "📊",
+          "skills": ["Python", "Spring Boot", "Java", "AWS"]
+        },
+        {
+          "role": "Undergraduate Research Assistant",
+          "organization": "University of Waterloo",
+          "duration": "Jan - Jun",
+          "summary": "Released an open-source Java tool for error analysis in CI/CD pipelines, garnering 1K+ forks.",
+          "emoji": "🧪",
+          "skills": ["Java", "Open Source", "CI/CD", "Compilers"]
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "experiences": [
+        {
+          "role": "Backend Developer Intern — Shared Utility Services Team",
+          "organization": "Ontario Ministry of Business Service Delivery",
+          "duration": "Sep - Dec",
+          "summary": "Engineered middleware in Rust, streamlining log processing for 80+ applications serving 7M Canadians.",
+          "emoji": "🏛️",
+          "skills": ["Java", "Rust", "Ruby", "Elasticsearch", "Kafka", "Linux"]
+        },
+        {
+          "role": "Project Lead & Developer",
+          "organization": "UW Blueprint",
+          "duration": "Sep - Aug 2024",
+          "summary": "Directed a team of 9 to build a platform for managing 1K+ patients, reducing onboarding time by 200+ hours.",
+          "emoji": "💙",
+          "skills": ["Flask", "TypeScript", "Docker", "React"]
+        },
+        {
+          "role": "Software Engineer Intern — On-board Solutions Team",
+          "organization": "Microart Services",
+          "duration": "Jan - Dec",
+          "summary": "Led end-to-end development of a flagship IoT app for 5K+ users, integrating real-time sensor data pipelines.",
+          "emoji": "📡",
+          "skills": ["React Native", "PostgreSQL", "Firebase", "IoT"]
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "experiences": [
+        {
+          "role": "Software Developer Intern — Wellness Team",
+          "organization": "Year Zero Studios",
+          "duration": "May - Aug",
+          "summary": "Launched an e-payments platform in 12 countries, increasing user sign-ups by 30% through Stripe integration.",
+          "emoji": "💳",
+          "skills": ["JavaScript", "Next.js", "Firebase"]
+        }
+      ]
+    }
+  ]
+  

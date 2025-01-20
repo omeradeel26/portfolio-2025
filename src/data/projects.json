@@ -1,0 +1,26 @@
+[
+  {
+    "title": "SkyCast",
+    "description": "A weather forecasting app for real-time data",
+    "year": 2021,
+    "type": "Web Apps",
+    "context": "Hackathon",
+    "languages": ["Python", "HTML, CSS, JS"]
+  },
+  {
+    "title": "Sudoku Solver",
+    "description": "An AI-powered solver for Sudoku puzzles",
+    "year": 2020,
+    "type": "Static Website",
+    "context": "Education",
+    "languages": ["Python"]
+  },
+  {
+    "title": "Asteroids Game",
+    "description": "A modern twist on the classic Asteroids game",
+    "year": 2022,
+    "type": "PyGame",
+    "context": "Personal",
+    "languages": ["C"]
+  }
+]
