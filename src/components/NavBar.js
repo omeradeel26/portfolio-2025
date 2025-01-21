@@ -15,11 +15,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import { Link as ScrollLink } from "react-scroll";
 import BedtimeIcon from "@mui/icons-material/Bedtime";
-import Brightness7RoundedIcon from "@mui/icons-material/Brightness7Rounded";
-
+import LightModeIcon from '@mui/icons-material/LightMode';
 // Import images
 import logo from "../assets/logo.png";
 import logov2 from "../assets/logov2.png";
+import { LightMode } from "@mui/icons-material";
 
 const Navbar = ({ toggleTheme, darkMode }) => {
   const [scrolling, setScrolling] = useState(false);
@@ -146,7 +146,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
                   "&:hover": { color: "primary.main" },
                 }}
               >
-                {darkMode ? <Brightness7RoundedIcon /> : <BedtimeIcon />}
+                {darkMode ? <LightMode /> : <BedtimeIcon />}
               </IconButton>
             </Box>
 

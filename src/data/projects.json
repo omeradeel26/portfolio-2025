@@ -22,5 +22,9 @@
   {
       "title": "Crypto Tracker",
       "description": "A cryptocurrency tracker with live market updates."
-  }
+  },
+  {
+    "title": "Crypto Tracker Part 2",
+    "description": "A cryptocurrency tracker with live market updates."
+    }
 ]

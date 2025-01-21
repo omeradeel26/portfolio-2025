@@ -90,7 +90,7 @@ const ProjectsSection = () => {
           ))}
         </Grid>
 
-        <FadeInSection delay={1.2}>
+        <FadeInSection delay={1}>
           {/* Pagination */}
           <Box sx={{ mt: 4, display: "flex", justifyContent: "center", gap: 2 }}>
             <Button
@@ -110,7 +110,7 @@ const ProjectsSection = () => {
           </Box>
         </FadeInSection>
         
-        <FadeInSection delay={1.4}>
+        <FadeInSection delay={1.2}>
         {/* Call to Action */}
           <Box sx={{ mt: 4, display: "flex", justifyContent: "center" }}>
             <Button
