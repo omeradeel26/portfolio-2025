@@ -14,7 +14,7 @@ import ContactSection from './components/ContactSection';
 import ProjectSection from './components/ProjectSection';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);

@@ -1,10 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { AppBar, Toolbar, Box, IconButton, Drawer, List, ListItem, Avatar, Container, Typography} from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Box,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  Avatar,
+  Container,
+  Typography,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import { Link as ScrollLink } from "react-scroll";
-import BedtimeIcon from '@mui/icons-material/Bedtime';
-import Brightness7RoundedIcon from '@mui/icons-material/Brightness7Rounded';
+import BedtimeIcon from "@mui/icons-material/Bedtime";
+import Brightness7RoundedIcon from "@mui/icons-material/Brightness7Rounded";
 
 // Import images
 import logo from "../assets/logo.png";
@@ -30,54 +41,66 @@ const Navbar = ({ toggleTheme, darkMode }) => {
   }, []);
 
   const getBackgroundColour = () => {
-    let color = ""
+    let color = "";
     if (darkMode) {
-      if (scrolling){
-        color =  '#181818'
+      if (scrolling) {
+        color = "#181818";
       } else {
-        color = "transparent" 
+        color = "#000";
       }
     } else {
-      color = "background.default"
+      color = "background.default";
     }
-    return color
-  }
+    return color;
+  };
 
   return (
     <>
       <AppBar
         position="fixed"
-        color={getBackgroundColour()}
         sx={{
-          bgcolor: "background.default",
-          transitionDuration: "0.3s",
-          boxShadow: scrolling ? "0px 4px 10px rgba(0, 0, 0, 0.1)" : "none", // ✅ Adds shadow on scroll
-          borderBottom: scrolling ? "1px solid rgba(0, 0, 0, 0.1)" : "transparent", // ✅ Subtle border
+          bgcolor: getBackgroundColour(), // Dynamically set background color
+          transition: "background-color 0.3s ease", // Smooth transition for background color
+          boxShadow: scrolling ? "0px 4px 10px rgba(0, 0, 0, 0.1)" : "none", // Adds shadow on scroll
+          borderBottom: scrolling ? "1px solid rgba(0, 0, 0, 0.1)" : "transparent", // Subtle border
         }}
-        enableColorOnDark
       >
         {/* ✅ Constrain width */}
-        <Container maxWidth="lg">
-          <Toolbar sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", minHeight: 70, px: 3 }} > 
+        <Container maxWidth="lg" sx={{bgcolor: "transparent"}}>
+          <Toolbar
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              minHeight: 70,
+              px: 3,
+              bgcolor: 'transparent'
+            }}
+          >
             {/* Left Side - Logo */}
             <Box sx={{ display: "flex", alignItems: "center" }}>
-                <ScrollLink
-                    to="landing"
-                    smooth={true}
-                    duration={800}
-                    offset={-70} // Adjust based on navbar height
-                    style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
-                >
-                    <Avatar 
-                        src={darkMode ? logov2 : logo}  
-                        alt="Logo"
-                        sx={{ width: 90, height: 80, cursor: "pointer", marginLeft: -5 }}
-                    />
-                </ScrollLink>
+              <ScrollLink
+                to="landing"
+                smooth={true}
+                duration={800}
+                offset={-70} // Adjust based on navbar height
+                style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
+              >
+                <Avatar
+                  src={darkMode ? logov2 : logo}
+                  alt="Logo"
+                  sx={{ width: 90, height: 80, cursor: "pointer", marginLeft: -5 }}
+                />
+              </ScrollLink>
             </Box>
 
             {/* Desktop Navigation */}
-            <Box sx={{ display: { xs: "none", md: "flex", alignItems:"center"}, gap: 4 }}>
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex", alignItems: "center" },
+                gap: 4,
+              }}
+            >
               {[
                 { name: "About", id: "about" },
                 { name: "Skills", id: "skills" },
@@ -93,45 +116,45 @@ const Navbar = ({ toggleTheme, darkMode }) => {
                   offset={-70}
                   style={{
                     cursor: "pointer",
-                    color: 'text.primary',
+                    color: "text.primary",
                     textDecoration: "none",
                     fontWeight: "bold",
                     transition: "color 0.3s, transform 0.2s",
-                    "&:hover": { color: "primary.main" } 
+                    "&:hover": { color: "primary.main" },
                   }}
                   activeStyle={{ color: theme.palette.primary.main }}
                 >
                   <Typography
-                     variant="body1"
-                     sx={{
-                        cursor: "pointer",
-                        color: theme.palette.text.primary,
-                        textDecoration: "none",
-                        transition: "color 0.3s, transform 0.2s",
-                      }}
+                    variant="body1"
+                    sx={{
+                      cursor: "pointer",
+                      color: theme.palette.text.primary,
+                      textDecoration: "none",
+                      transition: "color 0.3s, transform 0.2s",
+                    }}
                   >
                     {item.name}
                   </Typography>
                 </ScrollLink>
               ))}
               {/* Light/Dark Mode Toggle */}
-              <IconButton 
-                  onClick={toggleTheme} 
-                  color="primary.main"
-                  sx={{
-                    transition: "color 0.3s",
-                    "&:hover": { color: "primary.main" },
-                  }}
+              <IconButton
+                onClick={toggleTheme}
+                color="primary.main"
+                sx={{
+                  transition: "color 0.3s",
+                  "&:hover": { color: "primary.main" },
+                }}
               >
-                  {darkMode ? <Brightness7RoundedIcon/> : <BedtimeIcon />}
+                {darkMode ? <Brightness7RoundedIcon /> : <BedtimeIcon />}
               </IconButton>
             </Box>
 
             {/* Mobile Menu Button */}
-            <IconButton 
-              edge="end" 
+            <IconButton
+              edge="end"
               color={theme.palette.primary.main}
-              sx={{ display: { xs: "block", md: "none"} }} 
+              sx={{ display: { xs: "block", md: "none" } }}
               onClick={() => setOpen(true)}
             >
               <MenuIcon />
@@ -145,7 +168,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
         <List sx={{ width: 200 }}>
           {[
             { name: "About", id: "about" },
-            { name: "Skills", id: "skills"},
+            { name: "Skills", id: "skills" },
             { name: "Experience", id: "experience" },
             { name: "Projects", id: "projects" },
             { name: "Contact", id: "contact" },
@@ -166,7 +189,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
               {item.name}
             </ScrollLink>
           ))}
-          <ListItem button onClick={toggleTheme} sx={{padding:"10px 20px", cursor:"pointer"}}>
+          <ListItem button onClick={toggleTheme} sx={{ padding: "10px 20px", cursor: "pointer" }}>
             {darkMode ? "Light Mode" : "Dark Mode"}
           </ListItem>
         </List>
