@@ -62,9 +62,7 @@ const LandingSection = () => {
               variant="body1"
               sx={{ mt: 3, color: "text.secondary", maxWidth: "600px" }}
             >
-              Currently a Computer Engineering student at the University of
-              Waterloo, I’m passionate about solving complex problems, optimizing
-              performance, and driving innovation in tech.
+Currently studying Computer Engineering at the University of Waterloo, I find joy in tackling complex problems, creating efficient solutions, and exploring how technology can make a meaningful difference in the world.
             </Typography>
             <Button
               variant="contained"

@@ -29,7 +29,7 @@ const SkillsSection = () => {
                   .
                 </Box>
               </Typography>
-              <SectionSubtitle text={"What I bring to the table."}></SectionSubtitle>
+              <SectionSubtitle text={"What I Bring To The Table."}></SectionSubtitle>
             </FadeInSection>
           </Grid>
 

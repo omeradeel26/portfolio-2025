@@ -8,7 +8,8 @@
           "duration": "Jan - Apr",
           "summary": "Developed scalable infrastructure to manage $64B+ in digital assets with robust tools and services.",
           "emoji": "🔒",
-          "skills": ["TypeScript", "Node.js", "Rust"]
+          "skills": ["TypeScript", "Node.js", "Rust"],
+          "logo": "BG"
         }
       ]
     },
@@ -21,7 +22,8 @@
           "duration": "May - Aug",
           "summary": "Automated workflows and enhanced cloud service monitoring across 75 services, improving scalability.",
           "emoji": "📊",
-          "skills": ["Python", "Spring Boot", "Java", "AWS"]
+          "skills": ["Python", "Spring Boot", "Java", "AWS"],
+          "logo": "PW"
         },
         {
           "role": "Undergraduate Research Assistant",
@@ -29,7 +31,8 @@
           "duration": "Jan - Jun",
           "summary": "Released an open-source Java tool for error analysis in CI/CD pipelines, garnering 1K+ forks.",
           "emoji": "🧪",
-          "skills": ["Java", "Open Source", "CI/CD", "Compilers"]
+          "skills": ["Java", "Open Source", "CI/CD", "Compilers"],
+          "logo": "UW"
         }
       ]
     },
@@ -42,7 +45,8 @@
           "duration": "Sep - Dec",
           "summary": "Engineered middleware in Rust, streamlining log processing for 80+ applications serving 7M Canadians.",
           "emoji": "🏛️",
-          "skills": ["Java", "Rust", "Ruby", "Elasticsearch", "Kafka", "Linux"]
+          "skills": ["Java", "Rust", "Ruby", "Elasticsearch", "Kafka", "Linux"],
+          "logo": "OMBSD"
         },
         {
           "role": "Project Lead & Developer",
@@ -50,7 +54,8 @@
           "duration": "Sep - Aug 2024",
           "summary": "Directed a team of 9 to build a platform for managing 1K+ patients, reducing onboarding time by 200+ hours.",
           "emoji": "💙",
-          "skills": ["Flask", "TypeScript", "Docker", "React"]
+          "skills": ["Flask", "TypeScript", "Docker", "React"],
+          "logo": "UWBP"
         },
         {
           "role": "Software Engineer Intern — On-board Solutions Team",
@@ -58,7 +63,8 @@
           "duration": "Jan - Dec",
           "summary": "Led end-to-end development of a flagship IoT app for 5K+ users, integrating real-time sensor data pipelines.",
           "emoji": "📡",
-          "skills": ["React Native", "PostgreSQL", "Firebase", "IoT"]
+          "skills": ["React Native", "PostgreSQL", "Firebase", "IoT"],
+          "logo": "MS"
         }
       ]
     },
@@ -71,7 +77,8 @@
           "duration": "May - Aug",
           "summary": "Launched an e-payments platform in 12 countries, increasing user sign-ups by 30% through Stripe integration.",
           "emoji": "💳",
-          "skills": ["JavaScript", "Next.js", "Firebase"]
+          "skills": ["JavaScript", "Next.js", "Firebase"],
+          "logo": "YZS"
         }
       ]
     }

@@ -24,7 +24,7 @@ const ProjectsSection = () => {
       <Container maxWidth="lg">
         {/* Title */}
         <Grid container justifyContent="center" alignItems="center">
-          <Grid item xs={12} display="flex" justifyContent="center" sx={{ mb: { xs: 4, md: 15 } }}>
+          <Grid item xs={12} display="flex" justifyContent="center" sx={{ mb: { xs: 4, md: 12 } }}>
             <FadeInSection>
               <Typography variant="h3" sx={{ fontWeight: "bold", textAlign: "center" }}>
                 Projects
@@ -39,7 +39,7 @@ const ProjectsSection = () => {
                   .
                 </Box>
               </Typography>
-              <SectionSubtitle text={"What I've built so far."}></SectionSubtitle>
+              <SectionSubtitle text={"What I've Created Along The Way."}></SectionSubtitle>
             </FadeInSection>
           </Grid>
         </Grid>

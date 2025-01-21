@@ -39,8 +39,8 @@ const ContactSection = () => {
             </Box>
           </Typography>
 
-          <SectionSubtitle text={"Let’s get in touch."}></SectionSubtitle>
-          <Box sx={{mb: { xs: 4, md: 15 }}}></Box>
+          <SectionSubtitle text={"Let’s Get In Touch."}></SectionSubtitle>
+          <Box sx={{mb: { xs: 4, md: 12 }}}></Box>
         </FadeInSection>
 
         <Grid container spacing={6}>
@@ -153,7 +153,6 @@ const ContactSection = () => {
           </Grid>
         </Grid>
         <VerticalSpacer/> 
-        <VerticalSpacer/>
 
         {/* Footer */}
         <Typography
