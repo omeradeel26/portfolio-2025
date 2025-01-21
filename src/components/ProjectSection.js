@@ -90,46 +90,50 @@ const ProjectsSection = () => {
           ))}
         </Grid>
 
-        {/* Pagination */}
-        <Box sx={{ mt: 4, display: "flex", justifyContent: "center", gap: 2 }}>
-          <Button
-            variant="outlined"
-            disabled={currentPage === 1}
-            onClick={() => handlePageChange(currentPage - 1)}
-          >
-            Prev.
-          </Button>
-          <Button
-            variant="outlined"
-            disabled={currentPage === totalPages}
-            onClick={() => handlePageChange(currentPage + 1)}
-          >
-            Next
-          </Button>
-        </Box>
-
+        <FadeInSection delay={1.2}>
+          {/* Pagination */}
+          <Box sx={{ mt: 4, display: "flex", justifyContent: "center", gap: 2 }}>
+            <Button
+              variant="outlined"
+              disabled={currentPage === 1}
+              onClick={() => handlePageChange(currentPage - 1)}
+            >
+              Prev.
+            </Button>
+            <Button
+              variant="outlined"
+              disabled={currentPage === totalPages}
+              onClick={() => handlePageChange(currentPage + 1)}
+            >
+              Next
+            </Button>
+          </Box>
+        </FadeInSection>
+        
+        <FadeInSection delay={1.4}>
         {/* Call to Action */}
-        <Box sx={{ mt: 4, display: "flex", justifyContent: "center" }}>
-          <Button
-            variant="contained"
-            href="https://github.com/omeradeel26" // Replace with your GitHub link
-            target="_blank"
-            rel="noopener noreferrer"
-            endIcon={<GitHubIcon />}
-            sx={{
-              px: 4,
-              py: 1.4,
-              fontSize: "0.8rem",
-              textTransform: "none",
-              backgroundColor: "primary.main",
-              "&:hover": {
-                backgroundColor: "primary.dark",
-              },
-            }}
-          >
-            View More
-          </Button>
-        </Box>
+          <Box sx={{ mt: 4, display: "flex", justifyContent: "center" }}>
+            <Button
+              variant="contained"
+              href="https://github.com/omeradeel26" // Replace with your GitHub link
+              target="_blank"
+              rel="noopener noreferrer"
+              endIcon={<GitHubIcon />}
+              sx={{
+                px: 4,
+                py: 1.4,
+                fontSize: "0.8rem",
+                textTransform: "none",
+                backgroundColor: "primary.main",
+                "&:hover": {
+                  backgroundColor: "primary.dark",
+                },
+              }}
+            >
+              View More
+            </Button>
+          </Box>
+        </FadeInSection>
       </Container>
     </Box>
   );

@@ -60,7 +60,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
         position="fixed"
         sx={{
           bgcolor: getBackgroundColour(), // Dynamically set background color
-          transition: "background-color 0.3s ease", // Smooth transition for background color
+          transition: "background-color 0.6s ease", // Smooth transition for background color
           boxShadow: scrolling ? "0px 4px 10px rgba(0, 0, 0, 0.1)" : "none", // Adds shadow on scroll
           borderBottom: scrolling ? "1px solid rgba(0, 0, 0, 0.1)" : "transparent", // Subtle border
         }}
