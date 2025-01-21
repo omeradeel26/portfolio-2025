@@ -127,27 +127,14 @@ const ContactSection = () => {
                   InputLabelProps={{ style: { fontSize: "1rem" } }}
                 />
 
-                {/* Submit Button */}
                 <Button
-                  variant="outlined"
+                  variant="contained"
                   endIcon={<SendRoundedIcon />}
-                  sx={{
-                    alignSelf: "flex-start",
-                    px: 1.75,
-                    py: 1,
-                    fontSize: "0.9rem",
-                    textTransform: "none",
-                    borderColor: "primary.main",
-                    color: "primary.main",
-                    "&:hover": {
-                      backgroundColor: "rgba(33,150,243,0.1)",
-                      borderColor: "primary.main",
-                    },
-                    gap: 0.24,
-                  }}
+                  sx={{ px: 1.75, py: 1, fontSize: "0.9rem", gap: 0.5, textTransform: "none", alignSelf: 'flex-start'}}
                 >
                   Send Message
                 </Button>
+
               </Box>
             </FadeInSection>
           </Grid>
