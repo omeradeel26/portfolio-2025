@@ -151,7 +151,7 @@ const ContactSection = () => {
             mt: { xs: 6, md:10 }, // Add spacing at the bottom
           }}
         >
-          Created and maintained by Omer Adeel (January 2025).&nbsp; <a target="_blank" href="https://www.omeradeel.com">View Portfolio v1.</a>
+          Created and maintained by Omer Adeel (January 2025).
         </Typography>
       </Container>
     </Box>
