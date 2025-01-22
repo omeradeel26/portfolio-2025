@@ -159,7 +159,7 @@ const ContactSection = () => {
             mt: { xs: 6, md:10 }, // Add spacing at the bottom
           }}
         >
-          Created and maintained by Omer Adeel (January 2025). <a style={{color:'text.secondary'}}href="https://omeradeel2020.netlify.app"> Portfolio v1.</a>
+          Created and maintained by Omer Adeel (January 2025). <a style={{color:'text.secondary'}} target="_blank" href="https://omeradeel2020.netlify.app"> Portfolio v1.</a>
         </Typography>
       </Container>
     </Box>
