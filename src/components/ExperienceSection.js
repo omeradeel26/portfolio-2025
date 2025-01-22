@@ -67,9 +67,9 @@ const ExperienceSection = () => {
                     },
                     bgcolor: "background.paper",
                     display: "flex",
-                    flexDirection: "row",
+                    flexDirection: {xs: "column", md: "row"},
                     alignItems: "center",
-                    padding: "16px", // Adjust padding
+                    padding: "16px", // Adjust padding,
                   }}
                 >
                   {/* Logo */}
@@ -78,14 +78,15 @@ const ExperienceSection = () => {
                       width: "115px", // Square size for the logo
                       height: "105px",
                       display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
+                      justifyContent:  {sx: "flex-start", md: "center"},
+                      alignItems:  {sx: "flex-start", md: "center"},
                       borderRadius: "12px",
                       marginRight: "30px", // Space between logo and content
                       bgcolor: "#fff", // Match card background
                       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", // Optional for better visual appeal
                       borderRadius: "17px",
-                      padding: '14px'
+                      padding: '14px',
+                      marginBottom: {xs: "15px", md:"0px"}
                     }}
                   >
                   
