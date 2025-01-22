@@ -96,6 +96,7 @@ const ContactSection = () => {
               <form component="form" style={{ display: "flex", flexDirection: "column", gap: 3 }} netlify name="form1">
                 {/* Two Columns for Name and Email */}
                 <Box sx={{ display: "flex", gap: 2, mb:2}}>
+                  <input type="hidden" name="form-name" value="contact" />
                   <TextField
                     label="Name"
                     variant="outlined"
