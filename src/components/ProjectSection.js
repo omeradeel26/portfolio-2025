@@ -20,7 +20,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <Box id="projects" sx={{ py: { xs: 8, md: 12 }, bgcolor: "background.default" }}>
+    <Box id="projects" sx={{ py: { xs: 8, md: 12 }, px: 5, bgcolor: "background.default" }}>
       <Container maxWidth="lg">
         {/* Title */}
         <Grid container justifyContent="center" alignItems="center">

@@ -17,7 +17,7 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <Box id="skills" sx={{ py: { xs: 8, md: 12 }, bgcolor: "background.default" }}>
+    <Box id="skills" sx={{ py: { xs: 8, md: 12 }, px:5, bgcolor: "background.default" }}>
       <Container maxWidth="lg">
         {/* Title */}
         <Grid container spacing={3} justifyContent="center" alignItems="center">

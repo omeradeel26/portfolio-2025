@@ -21,9 +21,9 @@ const LandingSection = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "100vh",
-        px: 2,
-        pt: { xs: 4, md: 4 }, // Reduced padding to move content up
+        minHeight: "100vh", // Full viewport height
+        px: 7,
+        pt: { xs: 12, md:0 }, // Add padding to ensure title isn't covered
       }}
     >
       <Container
@@ -60,13 +60,25 @@ const LandingSection = () => {
           <FadeInSection delay={0.4}>
             <Typography
               variant="body1"
-              sx={{ mt: 3, color: "text.secondary", maxWidth: "600px" }}
+              sx={{
+                mt: 3,
+                color: "text.secondary",
+                maxWidth: "600px",
+                mx: { xs: "auto", md: 0 }, // Center text in mobile view
+              }}
             >
-Currently studying Computer Engineering at the University of Waterloo, I find joy in tackling complex problems, creating efficient solutions, and exploring how technology can make a meaningful difference in the world.
+              Currently studying Computer Engineering at the University of Waterloo, I find joy in tackling complex problems, creating efficient solutions, and exploring how technology can make a meaningful difference in the world.
             </Typography>
             <Button
               variant="contained"
-              sx={{ mt: 4, px: 2.5, py: 1.5, fontSize: "1rem", gap: 1.5, textTransform: "none"}}
+              sx={{
+                mt: 4,
+                px: 2.5,
+                py: 1.5,
+                fontSize: "1rem",
+                gap: 1.5,
+                textTransform: "none",
+              }}
               onClick={handleScrollToContact}
             >
               Get in Touch! <RocketLaunchRoundedIcon />
@@ -79,8 +91,10 @@ Currently studying Computer Engineering at the University of Waterloo, I find jo
           sx={{
             flex: 1,
             display: "flex",
-            justifyContent: "center",
-            mt: { xs: 2, md: -4 },
+            justifyContent: "center", // Center horizontally
+            alignItems: "center", // Center vertically
+            mt: { xs: 4, md: 0 },
+            marginLeft: {xs: 6, md:0}
           }}
         >
           <FadeInSection delay={0.8}>
@@ -89,15 +103,16 @@ Currently studying Computer Engineering at the University of Waterloo, I find jo
               src={portrait}
               alt="Omer Adeel"
               sx={{
-                width: { xs: "70%", md: "100%" },
+                width: { xs: "80%", md: "100%" },
                 maxWidth: "400px",
                 maxHeight: "450px",
                 borderRadius: "12px",
                 boxShadow: 3,
+                objectFit: "cover", // Ensure proper scaling
               }}
             />
           </FadeInSection>
-          </Box>
+        </Box>
       </Container>
 
       {/* Hide Scroll Button on Mobile */}

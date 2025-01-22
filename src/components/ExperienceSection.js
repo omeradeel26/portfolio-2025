@@ -17,7 +17,7 @@ const images = {
 
 const ExperienceSection = () => {
   return (
-    <Box id="experience" sx={{ py: { xs: 8, md: 12 }, bgcolor: "background.default" }}>
+    <Box id="experience" sx={{ py: { xs: 8, md: 12 }, px:3, bgcolor: "background.default" }}>
       <Container maxWidth="lg">
         {/* Title */}
         <FadeInSection>

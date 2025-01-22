@@ -10,6 +10,7 @@ const AboutSection = () => {
       id="about"
       sx={{
         py: { xs: 8, md: 12 },
+        px: 5,
         bgcolor: "background.default",
       }}
     >
@@ -56,7 +57,8 @@ const AboutSection = () => {
                         maxWidth: "390px",
                         borderRadius: "12px",
                         boxShadow: 3,
-                        mr: { xs: 0, md: 6 }
+                        mr: { xs: 0, md: 6 },
+                        ml: {xs: 2, md: 0}
                     }}
                     />
                 </FadeInSection>

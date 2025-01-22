@@ -14,6 +14,7 @@ const ContactSection = () => {
       sx={{
         py: { xs: 8, md: 8 },
         bgcolor: "background.default",
+        px:5,
       }}
     >
       <Container maxWidth="lg">
