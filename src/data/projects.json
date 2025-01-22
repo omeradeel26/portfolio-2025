@@ -1,30 +1,75 @@
 [
-  {
-      "title": "SkyCast",
-      "description": "A weather forecasting app for real-time data."
-  },
-  {
-      "title": "Sudoku Solver",
-      "description": "An AI-powered solver for Sudoku puzzles."
-  },
-  {
-      "title": "Asteroids Game",
-      "description": "A modern twist on the classic Asteroids game."
-  },
-  {
-      "title": "Expense Tracker",
-      "description": "A personal finance app for tracking expenses and budgeting."
-  },
-  {
-      "title": "Portfolio Builder",
-      "description": "An interactive tool to build and share portfolios."
-  },
-  {
-      "title": "Crypto Tracker",
-      "description": "A cryptocurrency tracker with live market updates."
-  },
-  {
-    "title": "Crypto Tracker Part 2",
-    "description": "A cryptocurrency tracker with live market updates."
+    {
+      "title": "NovaOS",
+      "description": "An operating system created for efficient task scheduling and memory management.",
+      "category": "Systems Programming",
+      "image": "OS",
+      "languages": ["C", "STM-32"],
+      "github": "https://github.com/omeradeel26/NovaOS",
+      "demo": null
+    },
+    {
+      "title": "Diamond Predictor",
+      "description": "Determining which baseball stars are destined for the Hall of Fame.",
+      "category": "Machine Learning",
+      "image": "BASEBALL",
+      "languages": ["Python", "SciKit", "Pandas", "SQL"],
+      "github": "https://github.com/example/sudoku-solver",
+      "demo": null
+    },
+    {
+      "title": "Messenger Clone",
+      "description": "A feature-rich replica of Facebook Messenger for seamless communication.",
+      "category": "Web App",
+      "image": "MSNGR",
+      "languages": ["React", "Socket.io", "MongoDB", "Express.js"],
+      "github": "https://github.com/omeradeel26/messengerclone",
+      "demo": null
+    },
+    {
+      "title": "Stockify",
+      "description": "A real-time dashboard for tracking key financial stocks performance at a glance.",
+      "category": "Web App",
+      "image": "STOCKS",
+      "languages": ["Golang", "AWS", "Redis", "Kafka"],
+      "github": "https://github.com/SandboxCo/Stockify",
+      "demo": null
+    },
+    {
+      "title": "Asteroids Reloaded",
+      "description": "A modern recreation of the classic Atari space shooter.",
+      "category": "Game Development",
+      "image": "ASTEROIDS",
+      "languages": ["Python", "Processing GUI"],
+      "github": "https://github.com/omeradeel26/Asteroids-Game",
+      "demo": null
+    },
+    {
+        "title": "Validdit",
+        "description": "A tool to combat misinformation by verifying the accuracy of Reddit posts.",
+        "category": "Web App",
+        "image": "REDDIT",
+        "languages": ["Flask", "PRAW API", "HTML/CSS"],
+        "github": "https://github.com/validdit/Validdit",
+        "demo": null
+    },
+    {
+      "title": "Chess",
+      "description": "A strategic recreation of the classic chess game with intuitive gameplay and interactive features.",
+      "category": "Game Development",
+      "image": "CHESS",
+      "languages": ["Python", "Processing GUI"],
+      "github": "https://github.com/omeradeel26/Python-Chess",
+      "demo": null
+    },
+    {
+      "title": "WebRacer",
+      "description": "A multithreaded web crawler that extracts and navigates all links from a webpage.",
+      "category": "Systems Programming",
+      "image": "CRAWLER",
+      "languages": ["C"],
+      "github": "https://github.com/omeradeel26/WebRacer",
+      "demo": null
     }
-]
+  ]
+  

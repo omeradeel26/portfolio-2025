@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Box, Grid, Typography, Container, Button } from "@mui/material";
+import { Box, Grid, Typography, Container, Button, Chip } from "@mui/material";
 import projects from "../data/projects.json"; // Dummy projects data
 import FadeInSection from "./FadeInSection"; // Import the FadeInSection component
 import SectionSubtitle from "./SectionSubtitle";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import IMAGES from "../data/images";
 
 const ProjectsSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -52,13 +53,13 @@ const ProjectsSection = () => {
                 <Box
                   sx={{
                     position: "relative",
-                    padding: "32px 24px",
+                    padding: "15px 20px",
                     textAlign: "center",
-                    height: "300px", // Increased height for longer cards
+                    height: "450px", // Adjusted height for additional content
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    justifyContent: "center",
+                    justifyContent: "flex-start",
                     backgroundColor: (theme) =>
                       theme.palette.mode === "dark"
                         ? "rgba(18, 32, 47, 1)" // Match dark mode cards
@@ -78,12 +79,86 @@ const ProjectsSection = () => {
                     },
                   }}
                 >
-                  <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+
+                  {/* Project Title */}
+                  <Typography variant="h6" sx={{ fontWeight: "bold", mb:2, md:2 }}>
                     {project.title}
                   </Typography>
-                  <Typography variant="body2" sx={{ color: "text.secondary", mt: 2 }}>
+                  {/* Project Image */}
+
+                  <Box
+                    component="img"
+                    src={IMAGES[project.image]}
+                    alt={project.title}
+                    sx={{
+                      width: "100%",
+                      height: "165px",
+                      objectFit: "cover",
+                      borderRadius: "8px",
+                      mb: 1,
+                    }}
+                  />
+
+                  {/* Category */}
+                  <Typography variant="subtitle2" sx={{ color: "text.secondary", mt: 1 }}>
+                    {project.category}
+                  </Typography>
+
+                  {/* Detailed Description */}
+                  <Typography
+                    variant="body2"
+                    sx={{ color: "text.secondary", mt: 1, textAlign: "center" }}
+                  >
                     {project.description}
                   </Typography>
+
+                  {/* Languages */}
+                  <Box sx={{ mt: 2, display: "flex", gap: 1, flexWrap: "wrap", justifyContent: "center" }}>
+                    {project.languages.map((language, idx) => (
+                      <Chip
+                        key={idx}
+                        label={language}
+                        variant="outlined"
+                        sx={{
+                          fontSize: "0.75rem",
+                          color: "text.primary",
+                          borderColor: "primary.main",
+                        }}
+                      />
+                    ))}
+                  </Box>
+
+                  {/* Buttons */}
+                  <Box sx={{ mt: 2, display: "flex", gap: 2, justifyContent: "center" }}>
+                    <Button
+                      variant="outlined"
+                      href={project.github}
+                      target="_blank"
+                      startIcon={<GitHubIcon />}
+                      sx={{
+                        textTransform: "none",
+                        fontSize: "0.8rem",
+                      }}
+                    >
+                      GitHub
+                    </Button>
+                    <Button
+                      variant="contained"
+                      href={project.demo || "#"}
+                      target={project.demo ? "_blank" : "_self"}
+                      disabled={!project.demo}
+                      sx={{
+                        textTransform: "none",
+                        fontSize: "0.8rem",
+                        backgroundColor: project.demo ? "primary.main" : "grey.500",
+                        "&:hover": {
+                          backgroundColor: project.demo ? "primary.dark" : "grey.500",
+                        },
+                      }}
+                    >
+                      Demo
+                    </Button>
+                  </Box>
                 </Box>
               </FadeInSection>
             </Grid>
@@ -109,7 +184,6 @@ const ProjectsSection = () => {
             </Button>
           </Box>
         </FadeInSection>
-        
         <FadeInSection delay={1.2}>
         {/* Call to Action */}
           <Box sx={{ mt: 4, display: "flex", justifyContent: "center" }}>
