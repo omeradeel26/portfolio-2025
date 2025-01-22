@@ -93,18 +93,20 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Grid item xs={12} md={7}>
             <FadeInSection delay={0.8}>
-              <Box component="form" sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
+              <Box component="form" sx={{ display: "flex", flexDirection: "column", gap: 3 }} netlify>
                 {/* Two Columns for Name and Email */}
                 <Box sx={{ display: "flex", gap: 2 }}>
                   <TextField
                     label="Name"
                     variant="outlined"
+                    name="name"
                     fullWidth
                     InputLabelProps={{ style: { fontSize: "1rem" } }}
                   />
                   <TextField
                     label="Email"
                     variant="outlined"
+                    email="email"
                     fullWidth
                     InputLabelProps={{ style: { fontSize: "1rem" } }}
                   />
@@ -114,6 +116,7 @@ const ContactSection = () => {
                 <TextField
                   label="Subject"
                   variant="outlined"
+                  name="subject"
                   fullWidth
                   InputLabelProps={{ style: { fontSize: "1rem" } }}
                 />
@@ -123,6 +126,7 @@ const ContactSection = () => {
                   label="Write Message"
                   variant="outlined"
                   multiline
+                  name="message"
                   rows={5}
                   fullWidth
                   InputLabelProps={{ style: { fontSize: "1rem" } }}
@@ -131,6 +135,7 @@ const ContactSection = () => {
                 <Button
                   variant="contained"
                   endIcon={<SendRoundedIcon />}
+                  type={"submit"}
                   sx={{ px: 1.75, py: 1, fontSize: "0.9rem", gap: 0.5, textTransform: "none", alignSelf: 'flex-start'}}
                 >
                   Send Message
