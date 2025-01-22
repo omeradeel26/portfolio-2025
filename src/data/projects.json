@@ -20,7 +20,7 @@
     {
       "title": "Messenger Clone",
       "description": "A feature-rich replica of Facebook Messenger for seamless communication.",
-      "category": "Web App",
+      "category": "Web App (Sockets)",
       "image": "MSNGR",
       "languages": ["React", "Socket.io", "MongoDB", "Express.js"],
       "github": "https://github.com/omeradeel26/messengerclone",
@@ -29,7 +29,7 @@
     {
       "title": "Stockify",
       "description": "A real-time dashboard for tracking key financial stocks performance at a glance.",
-      "category": "Web App",
+      "category": "Web App (Distributed Systems)",
       "image": "STOCKS",
       "languages": ["Golang", "AWS", "Redis", "Kafka"],
       "github": "https://github.com/SandboxCo/Stockify",
@@ -65,7 +65,7 @@
     {
       "title": "WebRacer",
       "description": "A multithreaded web crawler that extracts and navigates all links from a webpage.",
-      "category": "Systems Programming",
+      "category": "Systems Programming (Parallelism)",
       "image": "CRAWLER",
       "languages": ["C"],
       "github": "https://github.com/omeradeel26/WebRacer",
