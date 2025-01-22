@@ -6,7 +6,7 @@
           "role": "Software Engineer Intern — Velocity (Internal Tools) Team",
           "organization": "BitGo",
           "duration": "Jan - Apr",
-          "summary": "Building scalable infrastructure and tools to support the management of 64 billion dollars (USD) in digital assets.",
+          "summary": "Building scalable infrastructure and reliable tools to efficiently manage $64 billion USD in digital assets.",
           "emoji": "🔒",
           "skills": ["TypeScript", "Node.js", "Rust"],
           "logo": "BG"
@@ -43,7 +43,7 @@
           "role": "Backend Developer Intern — Shared Utility Services Team",
           "organization": "Ontario Ministry of Business Service Delivery",
           "duration": "Sep - Dec",
-          "summary": "Engineered key logging and visibility features on infrastructure platform hosting 80+ applications and serving 7 million Canadians.",
+          "summary": "Engineered key logging and observability features on infrastructure service hosting 80+ applications and serving 7 million Canadians.",
           "emoji": "🏛️",
           "skills": ["Java", "Rust", "Ruby", "Elasticsearch", "Kafka", "Linux"],
           "logo": "OMBSD"
@@ -75,7 +75,7 @@
           "role": "Software Developer Intern — Wellness Team",
           "organization": "Year Zero Studios",
           "duration": "May - Aug",
-          "summary": "Implemented key services on e-commerce social media platform for small business owners, including user authentication and the release of an e-payments feature to 12 new countries.",
+          "summary": "Implemented key services on e-commerce social media platform empowering small business owners, including user authentication and launching an e-payments feature across 12 new countries.",
           "emoji": "💳",
           "skills": ["JavaScript", "Next.js", "Firebase"],
           "logo": "YZS"
