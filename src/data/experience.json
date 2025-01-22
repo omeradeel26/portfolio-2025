@@ -6,7 +6,7 @@
           "role": "Software Engineer Intern — Velocity (Internal Tools) Team",
           "organization": "BitGo",
           "duration": "Jan - Apr",
-          "summary": "Developed scalable infrastructure to manage $64B+ in digital assets with robust tools and services.",
+          "summary": "Building scalable infrastructure and tools to support the management of 64 billion dollars (USD) in digital assets.",
           "emoji": "🔒",
           "skills": ["TypeScript", "Node.js", "Rust"],
           "logo": "BG"
@@ -20,7 +20,7 @@
           "role": "Software Engineer Intern — Shipping Platform & Analytics Team",
           "organization": "Purolator",
           "duration": "May - Aug",
-          "summary": "Automated workflows and enhanced cloud service monitoring across 75 services, improving scalability.",
+          "summary": "Developed and monitored analytics and data collection services for Purolator's cross-Canada fleet and package distribution.",
           "emoji": "📊",
           "skills": ["Python", "Spring Boot", "Java", "AWS"],
           "logo": "PW"
@@ -29,7 +29,7 @@
           "role": "Undergraduate Research Assistant",
           "organization": "University of Waterloo",
           "duration": "Jan - Jun",
-          "summary": "Released an open-source Java tool for error analysis in CI/CD pipelines, garnering 1K+ forks.",
+          "summary": "Released an open-source Java tool for static error analysis in CI/CD under supervision of Dr. Werner Dietl.",
           "emoji": "🧪",
           "skills": ["Java", "Open Source", "CI/CD", "Compilers"],
           "logo": "UW"
@@ -43,16 +43,16 @@
           "role": "Backend Developer Intern — Shared Utility Services Team",
           "organization": "Ontario Ministry of Business Service Delivery",
           "duration": "Sep - Dec",
-          "summary": "Engineered middleware in Rust, streamlining log processing for 80+ applications serving 7M Canadians.",
+          "summary": "Engineered key logging and visibility features on infrastructure platform hosting 80+ applications and serving 7 million Canadians.",
           "emoji": "🏛️",
           "skills": ["Java", "Rust", "Ruby", "Elasticsearch", "Kafka", "Linux"],
           "logo": "OMBSD"
         },
         {
-          "role": "Project Lead & Developer",
+          "role": "Project Lead & Developer — Infrastructure Team",
           "organization": "UW Blueprint",
           "duration": "Sep - Aug 2024",
-          "summary": "Directed a team of 9 to build a platform for managing 1K+ patients, reducing onboarding time by 200+ hours.",
+          "summary": "Directed a team of 9 developers to build a custom CLI and code generation tool supporting 24 tech stacks, reducing project onboarding time by 200+ hours.",
           "emoji": "💙",
           "skills": ["Flask", "TypeScript", "Docker", "React"],
           "logo": "UWBP"
@@ -61,7 +61,7 @@
           "role": "Software Engineer Intern — On-board Solutions Team",
           "organization": "Microart Services",
           "duration": "Jan - Dec",
-          "summary": "Led end-to-end development of a flagship IoT app for 5K+ users, integrating real-time sensor data pipelines.",
+          "summary": "Led end-to-end development and release of a flagship IoT application, integrating real-time sensor data pipelines and bluetooth technology.",
           "emoji": "📡",
           "skills": ["React Native", "PostgreSQL", "Firebase", "IoT"],
           "logo": "MS"
@@ -75,7 +75,7 @@
           "role": "Software Developer Intern — Wellness Team",
           "organization": "Year Zero Studios",
           "duration": "May - Aug",
-          "summary": "Launched an e-payments platform in 12 countries, increasing user sign-ups by 30% through Stripe integration.",
+          "summary": "Implemented key services on e-commerce social media platform for small business owners, including user authentication and the release of an e-payments feature to 12 new countries.",
           "emoji": "💳",
           "skills": ["JavaScript", "Next.js", "Firebase"],
           "logo": "YZS"
