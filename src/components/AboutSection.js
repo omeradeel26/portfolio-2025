@@ -74,7 +74,7 @@ const AboutSection = () => {
 
 
                 <Typography variant="body1" sx={{ color: "text.secondary", mb: 2 }}>
-                I’m now a <b>fourth-year Computer Engineering student</b> at the <b>University of Waterloo</b>, with a deep passion for technology, backend development, and infrastructure. Over the past few years, I’ve gained hands-on experience through multiple software engineering internships, working on scalable systems, cloud infrastructure, and backend architectures. Currently, I’m interning at BitGo, where I help build secure, high-performance systems for managing digital assets.            </Typography>
+                I’m now a <b>fourth-year Computer Engineering student</b> at the <b>University of Waterloo</b>, with a deep passion for technology, backend development, and infrastructure. Over the past few years, I’ve gained hands-on experience through multiple software engineering internships, working on scalable systems, cloud infrastructure, and backend architectures.</Typography>
 
                 <Typography variant="body1" sx={{ color: "text.secondary", mb: 2 }}>
                 This website serves as a hub for showcasing my projects and documenting my journey in software development. Beyond coding, I’m a huge basketball fan and an avid runner. I also enjoy connecting with new people, so feel free to reach out—I'd love to chat. <br></br> <br></br>
